@@ -1,13 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useReminder } from "@/context/ReminderContext";
-
 
 export default function LanguageReminder() {
     const { showRemind, dismiss } = useReminder();
-
-
 
     if (!showRemind) return null;
 

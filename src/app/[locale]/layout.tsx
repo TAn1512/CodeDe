@@ -26,7 +26,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     }
 
     return (
-        <html lang={locale}>
+        <html lang={locale} className={inter.variable}>
             <body className="font-sans">
                 <ReminderProvider>
                     <SortProvider>
