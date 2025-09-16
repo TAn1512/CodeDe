@@ -1,0 +1,59 @@
+{
+    "Home": {
+        "title": "Chào mừng đến với AlgoVis",
+        "description": "Trực quan hóa từng bước của thuật toán và hiểu cách chúng hoạt động.",
+        "Sorting": {
+            "title": "Trực quan hóa sắp xếp",
+            "description": "Trực quan hóa các thuật toán sắp xếp từng bước."
+        }
+    },
+    "Navbar": {
+        "home": "Trang chủ",
+        "sorting": "Thuật toán sắp xếp",
+        "language": "Ngôn ngữ"
+    },
+    "Footer": {
+        "copyright": "© 2025 AlgoVis. Bảo lưu mọi quyền."
+    },
+    "Algorithms": {
+        "Common": {
+            "start": "Bắt đầu",
+            "pause": "Tạm dừng",
+            "resume": "Tiếp tục",
+            "random": "Mảng ngẫu nhiên",
+            "sorting": "Đang sắp xếp...",
+            "reset": "Đặt lại",
+            "done": "Hoàn tất!",
+            "inputError": "Vui lòng nhập số trong khoảng từ 1 đến 50.",
+            "comparing": "So sánh",
+            "and": "và",
+            "shifting": "Dịch sang phải",
+            "inserting": "Chèn",
+            "pickKey": "Chọn phần tử khóa"
+        },
+        "BubbleSort": {
+            "title": "Trực quan Bubble Sort",
+            "description": "Trực quan từng bước của thuật toán Bubble Sort."
+        },
+        "SelectionSort": {
+            "title": "Trực quan Selection Sort",
+            "description": "Trực quan từng bước của thuật toán Selection Sort."
+        },
+        "InsertionSort": {
+            "title": "Trực quan Insertion Sort",
+            "description": "Trực quan từng bước của thuật toán Insertion Sort."
+        },
+        "MergeSort": {
+            "title": "Trực quan Merge Sort",
+            "description": "Trực quan từng bước của thuật toán Merge Sort."
+        },
+        "QuickSort": {
+            "title": "Trực quan Quick Sort",
+            "description": "Trực quan từng bước của thuật toán Quick Sort."
+        },
+        "HeapSort": {
+            "title": "Trực quan Heap Sort",
+            "description": "Trực quan từng bước của thuật toán Heap Sort."
+        }
+    }
+}
