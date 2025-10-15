@@ -1,0 +1,32 @@
+{
+    "title": "Các thẻ HTML",
+    "description": "Thẻ (tag) là thành phần cơ bản của HTML. Mỗi thẻ cho trình duyệt biết cách hiển thị nội dung.",
+    "sections": [
+        {
+            "heading": "Thẻ là gì?",
+            "content": "Thẻ HTML là từ khóa được đặt trong dấu ngoặc nhọn. Thường sẽ có hai thẻ đi cùng nhau: thẻ mở và thẻ đóng, ví dụ <p> và </p>."
+        },
+        {
+            "heading": "Các thẻ phổ biến",
+            "content": "Dưới đây là một số thẻ HTML thường dùng khi xây dựng trang web."
+        }
+    ],
+    "examples": [
+        {
+            "title": "Thẻ tiêu đề (Heading)",
+            "code": "<h1>Đây là tiêu đề</h1>\n<h2>Đây là tiêu đề phụ</h2>\n<h3>Tiêu đề nhỏ hơn</h3>"
+        },
+        {
+            "title": "Thẻ đoạn văn (Paragraph)",
+            "code": "<p>Đây là một đoạn văn bản trong HTML.</p>"
+        },
+        {
+            "title": "Thẻ liên kết (Link)",
+            "code": "<a href='https://example.com'>Truy cập Example</a>"
+        },
+        {
+            "title": "Thẻ hình ảnh (Image)",
+            "code": "<img src='https://via.placeholder.com/150' alt='Ảnh ví dụ' />"
+        }
+    ]
+}

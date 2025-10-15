@@ -3,8 +3,8 @@ import { useTranslations } from "next-intl";
 import SortingVisualizer from "../SortingVisualizer";
 
 export default function InsertionSort() {
-    const t = useTranslations("Algorithms.InsertionSort");
-    const common = useTranslations("Algorithms.Common");
+    const t = useTranslations("algorithms.InsertionSort");
+    const common = useTranslations("algorithms.Common");
 
     return (
         <SortingVisualizer

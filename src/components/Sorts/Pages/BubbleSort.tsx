@@ -4,8 +4,8 @@ import { bubbleSort } from "@/algorithms/bubbleSort";
 import SortingVisualizer from "../SortingVisualizer";
 
 export default function BubbleSortPage() {
-    const t = useTranslations("Algorithms.BubbleSort");
-    const common = useTranslations("Algorithms.Common");
+    const t = useTranslations("algorithms.BubbleSort");
+    const common = useTranslations("algorithms.Common");
 
     return (
         <SortingVisualizer

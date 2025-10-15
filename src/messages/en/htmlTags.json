@@ -1,0 +1,32 @@
+{
+    "title": "HTML Tags",
+    "description": "Tags are the building blocks of HTML. Each tag tells the browser how to display the content.",
+    "sections": [
+        {
+            "heading": "What is a Tag?",
+            "content": "An HTML tag is a keyword enclosed in angle brackets. Tags usually come in pairs like <p> and </p> — an opening tag and a closing tag."
+        },
+        {
+            "heading": "Common Tags",
+            "content": "Below are some of the most common HTML tags you’ll use when building a web page."
+        }
+    ],
+    "examples": [
+        {
+            "title": "Heading Tags",
+            "code": "<h1>This is a Heading</h1>\n<h2>This is a Subheading</h2>\n<h3>Smaller Heading</h3>"
+        },
+        {
+            "title": "Paragraph Tag",
+            "code": "<p>This is a paragraph of text in HTML.</p>"
+        },
+        {
+            "title": "Link Tag",
+            "code": "<a href='https://example.com'>Visit Example</a>"
+        },
+        {
+            "title": "Image Tag",
+            "code": "<img src='https://via.placeholder.com/150' alt='Sample image' />"
+        }
+    ]
+}
