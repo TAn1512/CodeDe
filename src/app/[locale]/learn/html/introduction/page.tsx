@@ -136,8 +136,8 @@ export default function HTMLIntroductionPage() {
                     defaultCode={`<!DOCTYPE html>
 <html>
 <body>
-  <a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a><br><br>
-  <img src="https://via.placeholder.com/150" alt="Example image" width="150"><br><br>
+  <a href="https://algovis-annt.vercel.app/" target="_blank">Visit AlgoVis</a><br><br>
+  <img src="https://firebasestorage.googleapis.com/v0/b/annt-project.appspot.com/o/images%2Flogo.png?alt=media&token=5c5e6f18-9c4a-4c97-8450-1932d90d71a9" alt="Example image" width="150"><br><br>
   <input type="text" placeholder="Enter your name"><br><br>
   <button style="background-color: teal; color: white; border: none; padding: 6px 12px; border-radius: 6px;">Click Me</button>
 </body>
