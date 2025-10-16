@@ -15,5 +15,6 @@
     "example4": "<p>Đây là<br>một đoạn văn<br>có ngắt dòng.</p>",
     "sub5": "Văn bản định dạng sẵn",
     "sub5_desc": "Thẻ &lt;pre&gt; giữ nguyên khoảng trắng và xuống dòng, hiển thị văn bản đúng như trong mã nguồn.",
-    "example5": "<pre>\nBonnie của tôi ở ngoài đại dương.\n\nBonnie của tôi ở ngoài khơi xa.\n\nBonnie của tôi ở ngoài đại dương.\n\nÔi, hãy mang Bonnie của tôi trở lại bên tôi.\n</pre>"
+    "example5": "<pre>\nBonnie của tôi ở ngoài đại dương.\n\nBonnie của tôi ở ngoài khơi xa.\n\nBonnie của tôi ở ngoài đại dương.\n\nÔi, hãy mang Bonnie của tôi trở lại bên tôi.\n</pre>",
+    "note1": "<strong>Lưu ý:</strong> Trình duyệt sẽ gộp các khoảng trắng (dấu cách, tab, xuống dòng) trong luồng văn bản bình thường. Dùng <code>&lt;pre&gt;</code> để giữ nguyên định dạng, hoặc <code>&lt;br&gt;</code> để ngắt dòng đơn."
 }

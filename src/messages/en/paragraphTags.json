@@ -15,5 +15,6 @@
     "example4": "<p>This is<br>a paragraph<br>with line breaks.</p>",
     "sub5": "Preformatted Text",
     "sub5_desc": "The &lt;pre&gt; tag keeps spaces and line breaks, displaying text exactly as written.",
-    "example5": "<pre>\nMy Bonnie lies over the ocean.\n\nMy Bonnie lies over the sea.\n\nMy Bonnie lies over the ocean.\n\nOh, bring back my Bonnie to me.\n</pre>"
+    "example5": "<pre>\nMy Bonnie lies over the ocean.\n\nMy Bonnie lies over the sea.\n\nMy Bonnie lies over the ocean.\n\nOh, bring back my Bonnie to me.\n</pre>",
+    "note1": "<strong>Note:</strong> Browsers collapse whitespace (spaces, tabs, newlines) in normal flow. Use <code>&lt;pre&gt;</code> to preserve formatting, or <code>&lt;br&gt;</code> for single line breaks."
 }

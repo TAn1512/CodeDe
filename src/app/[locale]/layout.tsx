@@ -38,6 +38,9 @@ async function loadMessages(locale: string) {
 
     return messages;
 }
+export function generateStaticParams() {
+    return [{ locale: "en" }, { locale: "vi" }];
+}
 
 export default async function LocaleLayout({ children, params }: Props) {
     const { locale } = await params;

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
-import LanguageReminder from "./LanguageReminder";
+// import LanguageReminder from "./LanguageReminder";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -29,7 +29,7 @@ export default function Navbar() {
                         className="rounded-md"
                     />
                     <span className="text-xl font-extrabold tracking-wide">
-                        AlgoVis
+                        CodeDe
                     </span>
                 </Link>
 
@@ -77,7 +77,7 @@ export default function Navbar() {
                 </div>
             )}
 
-            {isHome && <LanguageReminder />}
+            {/* {isHome && <LanguageReminder />} */}
         </nav>
     );
 }

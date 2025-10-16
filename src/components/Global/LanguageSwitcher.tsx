@@ -7,19 +7,30 @@ export default function LanguageSwitcher() {
     const router = useRouter();
     const pathname = usePathname();
 
-    // Lấy locale hiện tại từ URL (/en/... hoặc /vi/...)
+    // Xác định locale hiện tại (từ segment đầu tiên)
     const currentLocale = pathname?.split("/")[1] || "en";
 
     const changeLocale = (locale: string) => {
-        const newPath = "/" + locale + pathname.substring(3);
+        const segments = pathname.split("/");
+
+
+        // Nếu URL hiện có locale ở đầu (ví dụ /vi/html/links)
+        if (locales.includes(segments[1] as any)) {
+            segments[1] = locale; // thay locale cũ bằng locale mới
+        } else {
+            segments.splice(1, 0, locale); // thêm locale mới nếu chưa có
+        }
+
+        // Gộp lại URL
+        const newPath = segments.join("/") || "/";
         router.push(newPath);
     };
 
     return (
         <select
-            value={currentLocale} // ✅ giữ option hiện tại
+            value={currentLocale}
             onChange={(e) => changeLocale(e.target.value)}
-            className="bg-gray-700 text-white rounded px-2 py-1"
+            className="bg-gray-700 text-white rounded px-2 py-1 cursor-pointer"
         >
             {locales.map((loc) => (
                 <option key={loc} value={loc}>

@@ -12,6 +12,8 @@ const lessons = [
     { id: "headings", key: "headings" },
     { id: "paragraphs", key: "paragraphs" },
     { id: "styles", key: "styles" },
+    { id: "formatting", key: "formatting" },
+    { id: "links", key: "links" },
 ];
 
 export default function Sidebar() {

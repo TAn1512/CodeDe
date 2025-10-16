@@ -13,7 +13,6 @@ export default function HomePage() {
         <div className="flex flex-col min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
             <HeroSection t={t} />
             <LearningPaths t={t} />
-            <Footer />
         </div>
     );
 }

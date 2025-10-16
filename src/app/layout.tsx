@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Algovis",
+  title: "CodeDe",
   description: "Visual tool for data structures and algorithms learning.",
 };
 

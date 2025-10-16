@@ -1,36 +1,33 @@
-"use client";
+import Note from "@/components/Learn/HTML/Tags/Note";
+import Section from "@/components/Learn/HTML/Tags/Section";
+import { getTranslations } from "next-intl/server";
 
-import HTMLPlayground from "@/components/Learn/HTML/HTMLPlayground";
-import { useTranslations } from "next-intl";
 
-export default function HeadingsPage() {
-    const t = useTranslations("headingTags");
+export default async function HeadingsPage({
+    params,
+}: {
+    params: { locale: string };
+}) {
+    const { locale } = await params;
+    const t = await getTranslations({
+        locale: locale,
+        namespace: "headingTags",
+    });
 
     return (
         <div className="space-y-10">
-            {/* Tiêu đề và mô tả */}
-            <div>
-                <h1 className="text-3xl font-bold mb-4 text-indigo-400">
-                    {t("title")}
-                </h1>
-                <p
-                    className="text-gray-300 mb-6 leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: t.raw("description") }}
-                />
-
-                <ul className="list-disc pl-5 text-gray-400 mb-6 space-y-2">
-                    <li
-                        dangerouslySetInnerHTML={{ __html: t.raw("point1") }}
-                    />
-                    <li>{t("point2")}</li>
-                    <li>{t("point3")}</li>
-                </ul>
-            </div>
-
-            {/* Example cơ bản */}
-            <HTMLPlayground
-                title={t("exampleTitle")}
-                defaultCode={`<!DOCTYPE html>
+            {/* --- Phần giới thiệu --- */}
+            <Section
+                title={t("title")}
+                desc={`
+                    <p>${t("description")}</p>
+                    <ul class="list-disc pl-5 mt-3 space-y-2">
+                        <li>${t.raw("point1")}</li>
+                        <li>${t("point2")}</li>
+                        <li>${t("point3")}</li>
+                    </ul>
+                `}
+                example={`<!DOCTYPE html>
 <html>
   <body>
     <h1>This is a Heading 1</h1>
@@ -40,52 +37,27 @@ export default function HeadingsPage() {
 </html>`}
             />
 
-            {/* Note */}
-            <div className="p-5 bg-yellow-50 border-l-4 border-yellow-400 rounded-md text-gray-700">
-                <span
-                    dangerouslySetInnerHTML={{ __html: t.raw("note1") }}
-                />
-            </div>
+            {/* --- Ghi chú 1 --- */}
+            <Note content={t.raw("note1")} />
 
-            {/* Heading Importance */}
-            <div>
-                <h2 className="text-2xl font-semibold text-indigo-400 mb-3">
-                    {t("importanceTitle")}
-                </h2>
-                <p
-                    className="text-gray-300 leading-relaxed mb-4"
-                    dangerouslySetInnerHTML={{ __html: t.raw("importanceText") }}
-                />
-            </div>
+            {/* --- Heading Importance --- */}
+            <Section title={t("importanceTitle")} desc={t.raw("importanceText")} />
 
-            {/* Note */}
-            <div className="p-5 bg-yellow-50 border-l-4 border-yellow-400 rounded-md text-gray-700">
-                <span
-                    dangerouslySetInnerHTML={{ __html: t.raw("note2") }}
-                />
-            </div>
+            {/* --- Ghi chú 2 --- */}
+            <Note content={t.raw("note2")} />
 
-            {/* Bigger Headings */}
-            <div>
-                <h2 className="text-2xl font-semibold text-indigo-400 mb-3">
-                    {t("biggerTitle")}
-                </h2>
-                <p
-                    className="text-gray-300 mb-4 leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: t.raw("biggerText") }}
-                />
-
-                <HTMLPlayground
-                    title={t("biggerExample")}
-                    defaultCode={`<!DOCTYPE html>
+            {/* --- Bigger Headings --- */}
+            <Section
+                title={t("biggerTitle")}
+                desc={t.raw("biggerText")}
+                example={`<!DOCTYPE html>
 <html>
   <body>
     <h1 style="font-size:60px;">Heading 1</h1>
     <h1 style="font-size:70px;">Heading 1</h1>
   </body>
 </html>`}
-                />
-            </div>
+            />
         </div>
     );
 }
