@@ -11,7 +11,7 @@ export default async function StylesPage({
     const { locale } = await params;
     const t = await getTranslations({
         locale: locale,
-        namespace: "htmlStylesTags",
+        namespace: "html.stylesTags",
     });
 
     return (

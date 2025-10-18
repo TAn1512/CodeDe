@@ -11,7 +11,7 @@ export default async function HeadingsPage({
     const { locale } = await params;
     const t = await getTranslations({
         locale: locale,
-        namespace: "headingTags",
+        namespace: "html.headingTags",
     });
 
     return (
@@ -27,21 +27,21 @@ export default async function HeadingsPage({
                         <li>${t("point3")}</li>
                     </ul>
                 `}
-                example={`<!DOCTYPE html>
-<html>
-  <body>
-    <h1>This is a Heading 1</h1>
-    <h2>This is a Heading 2</h2>
-    <h3>This is a Heading 3</h3>
-  </body>
-</html>`}
+
             />
 
             {/* --- Ghi chú 1 --- */}
             <Note content={t.raw("note1")} />
 
             {/* --- Heading Importance --- */}
-            <Section title={t("importanceTitle")} desc={t.raw("importanceText")} />
+            <Section title={t("importanceTitle")} desc={t.raw("importanceText")} example={`<!DOCTYPE html>
+<html>
+  <body>
+    <h1>This is a Heading 1</h1>
+    <h2>This is a Heading 2</h2>
+    <h3>This is a Heading 3</h3>
+  </body>
+</html>`} />
 
             {/* --- Ghi chú 2 --- */}
             <Note content={t.raw("note2")} />

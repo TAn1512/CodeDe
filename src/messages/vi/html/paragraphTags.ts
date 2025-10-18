@@ -1,0 +1,30 @@
+const paragraphTags = {
+    title: "Đoạn Văn Trong HTML",
+    description:
+        "Thẻ &lt;p&gt; được dùng để định nghĩa một đoạn văn. Trình duyệt sẽ tự động thêm khoảng trắng trước và sau đoạn văn.",
+    sub1: "Đoạn văn cơ bản",
+    sub1_desc: "Mỗi đoạn văn bắt đầu ở dòng mới và thường là một khối văn bản.",
+    example1: "<p>Đây là một đoạn văn.</p>\n<p>Đây là một đoạn văn khác.</p>",
+    sub2: "Cách hiển thị trong HTML",
+    sub2_desc:
+        "Việc thêm nhiều khoảng trắng hoặc xuống dòng trong mã HTML sẽ không ảnh hưởng đến cách hiển thị trên trình duyệt.",
+    example2:
+        "<p>\nĐoạn văn này\ncó nhiều dòng trong mã nguồn,\nnhưng trình duyệt sẽ bỏ qua chúng.\n</p>\n\n<p>\nĐoạn văn này    có    nhiều    khoảng trắng    trong mã nguồn,\nnhưng trình duyệt sẽ bỏ qua chúng.\n</p>",
+    sub3: "Đường kẻ ngang",
+    sub3_desc:
+        "Thẻ &lt;hr&gt; tạo ra một đường kẻ ngang, thường được dùng để phân tách nội dung trong trang.",
+    example3:
+        "<h1>Đây là tiêu đề 1</h1>\n<p>Đây là một đoạn văn bản.</p>\n<hr>\n<h2>Đây là tiêu đề 2</h2>\n<p>Đây là một đoạn văn khác.</p>\n<hr>",
+    sub4: "Ngắt dòng",
+    sub4_desc:
+        "Thẻ &lt;br&gt; được dùng để xuống dòng mà không cần bắt đầu một đoạn văn mới.",
+    example4: "<p>Đây là<br>một đoạn văn<br>có ngắt dòng.</p>",
+    sub5: "Văn bản định dạng sẵn",
+    sub5_desc:
+        "Thẻ &lt;pre&gt; giữ nguyên khoảng trắng và xuống dòng, hiển thị văn bản đúng như trong mã nguồn.",
+    example5:
+        "<pre>\nBonnie của tôi ở ngoài đại dương.\n\nBonnie của tôi ở ngoài khơi xa.\n\nBonnie của tôi ở ngoài đại dương.\n\nÔi, hãy mang Bonnie của tôi trở lại bên tôi.\n</pre>",
+    note1: "<strong>Lưu ý:</strong> Trình duyệt sẽ gộp các khoảng trắng (dấu cách, tab, xuống dòng) trong luồng văn bản bình thường. Dùng <code>&lt;pre&gt;</code> để giữ nguyên định dạng, hoặc <code>&lt;br&gt;</code> để ngắt dòng đơn."
+};
+
+export default paragraphTags;

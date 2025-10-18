@@ -1,6 +1,4 @@
 import Section from "@/components/Learn/HTML/Tags/Section";
-import Note from "@/components/Learn/HTML/Tags/Note";
-import Tip from "@/components/Learn/HTML/Tags/Tip";
 import { getTranslations } from "next-intl/server";
 
 export default async function HTMLIntroductionPage({
@@ -11,7 +9,7 @@ export default async function HTMLIntroductionPage({
     const { locale } = await params;
     const t = await getTranslations({
         locale: locale,
-        namespace: "htmlIntroduction",
+        namespace: "html.introduction",
     });
 
     const content = {

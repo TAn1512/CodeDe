@@ -19,7 +19,7 @@ const lessons = [
 export default function Sidebar() {
     const pathname = usePathname();
     const [open, setOpen] = useState(false);
-    const t = useTranslations("htmlSidebar");
+    const t = useTranslations("html.sidebar");
 
     const renderLinks = () => (
         <ul className="space-y-2">

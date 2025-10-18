@@ -6,7 +6,7 @@ import { getTranslations } from "next-intl/server";
 export default async function HTMLFormattingPage({ params }: { params: { locale: string } }) {
     const { locale } = await params;
 
-    const t = await getTranslations({ locale: locale, namespace: "htmlFormatting" });
+    const t = await getTranslations({ locale: locale, namespace: "html.formattingTags" });
 
     const content = {
         title: t("title"),
