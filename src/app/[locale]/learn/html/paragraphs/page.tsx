@@ -10,7 +10,7 @@ export default async function ParagraphsPage({
     const { locale } = await params;
     const t = await getTranslations({
         locale: locale,
-        namespace: "paragraphTags",
+        namespace: "html.paragraphTags",
     });
 
     return (

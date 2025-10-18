@@ -7,20 +7,24 @@ import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 // import LanguageReminder from "./LanguageReminder";
-import { usePathname } from "next/navigation";
+// import { usePathname } from "next/navigation";
+import { useLocale } from "next-intl";
+
 
 export default function Navbar() {
-    const t = useTranslations("navbar");
-    const pathname = usePathname();
-    const isHome = pathname === "/" || pathname === "/en" || pathname === "/vi";
+    const t = useTranslations("global.navbar");
+    // const pathname = usePathname();
+    // const isHome = pathname === "/" || pathname === "/en" || pathname === "/vi";
 
     const [menuOpen, setMenuOpen] = useState(false);
+    const locale = useLocale();
+
 
     return (
         <nav className="fixed w-full z-50 bg-gradient-to-r from-indigo-600 to-purple-700 text-white shadow-md">
             <div className="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2">
+                <Link href={`/${locale}`} className="flex items-center gap-2">
                     <Image
                         src="/logo.png"
                         alt="Logo"

@@ -1,9 +1,0 @@
-{
-    "title": "Khóa học HTML",
-    "lessons": {
-        "intro": "Giới thiệu về HTML",
-        "tags": "Các thẻ HTML",
-        "elements": "Phần tử HTML",
-        "attributes": "Thuộc tính HTML"
-    }
-}

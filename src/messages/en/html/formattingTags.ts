@@ -1,0 +1,39 @@
+const formattingTags = {
+    title: "HTML Text Formatting",
+    description: "HTML provides several elements for defining text with special meaning and style emphasis.",
+    sub1: "Formatting Elements Overview",
+    sub1_desc: "Formatting elements are used to style text in different ways — to show importance, highlight changes, or indicate meaning.",
+    example1: "<p><b>This text is bold</b></p>\n<p><strong>This text is important!</strong></p>",
+    note1: "<strong>Note:</strong> The <code>&lt;b&gt;</code> tag makes text bold without extra importance, while <code>&lt;strong&gt;</code> indicates important text.",
+    sub2: "Italic and Emphasized Text",
+    sub2_desc: "The <code>&lt;i&gt;</code> tag defines text in an alternate mood or voice (e.g., a technical term or a foreign phrase), while <code>&lt;em&gt;</code> emphasizes meaning and is recognized by screen readers.",
+    example2: "<p><i>This text is italic</i></p>\n<p><em>This text is emphasized</em></p>",
+    tip1: "<strong>Tip:</strong> Use <code>&lt;em&gt;</code> for semantic emphasis and <code>&lt;i&gt;</code> for stylistic changes.",
+    sub3: "Marked and Small Text",
+    sub3_desc: "Use <code>&lt;mark&gt;</code> to highlight important or relevant words, and <code>&lt;small&gt;</code> to show less prominent information or side notes.",
+    example3: "<p>Don't forget to buy <mark>milk</mark> today!</p>\n<p><small>This is smaller text.</small></p>",
+    note2: "<strong>Note:</strong> Marked text is often shown with a yellow background to attract attention.",
+    sub4: "Deleted and Inserted Text",
+    sub4_desc: "The <code>&lt;del&gt;</code> tag shows deleted text (strikethrough), while <code>&lt;ins&gt;</code> marks inserted or newly added text (usually underlined).",
+    example4: "<p>My favorite color is <del>blue</del>\n<ins>red</ins>.</p>",
+    tip2: "<strong>Tip:</strong> Place <code>&lt;del&gt;</code> and <code>&lt;ins&gt;</code> on separate lines or with spacing to avoid overlapping styles.",
+    sub5: "Subscript and Superscript Text",
+    sub5_desc: "<code>&lt;sub&gt;</code> displays text below the baseline (commonly used for chemical formulas), while <code>&lt;sup&gt;</code> raises text above the baseline (used for footnotes or exponents).",
+    example5: "<p>Water formula: H<sub>2</sub>O</p>",
+    tip3: "<strong>Tip:</strong> These tags are great for scientific and mathematical notations.",
+    sub6: "Superscript Text",
+    sub6_desc: "The <code>&lt;sup&gt;</code> tag defines superscript text, often used for exponents or footnotes.",
+    example6: "<p>10<sup>2</sup> = 100</p>",
+    note3: "<strong>Note:</strong> Superscript text appears slightly above the normal text line.",
+    summaryTitle: "Chapter Summary",
+    summary: `<ul>
+<li>Use <code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code> for bold text.</li>
+<li>Use <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code> for italic/emphasized text.</li>
+<li>Use <code>&lt;mark&gt;</code> for highlighted text.</li>
+<li>Use <code>&lt;small&gt;</code> for smaller, secondary text.</li>
+<li>Use <code>&lt;del&gt;</code> and <code>&lt;ins&gt;</code> to show removed or added content.</li>
+<li>Use <code>&lt;sub&gt;</code> and <code>&lt;sup&gt;</code> for subscript and superscript text.</li>
+</ul>`,
+};
+
+export default formattingTags;

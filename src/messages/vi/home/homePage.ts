@@ -1,0 +1,30 @@
+const homePage = {
+  title: "Chào mừng đến với CodeDe",
+  description:
+    "Học lập trình từ cơ bản — HTML, CSS, JavaScript, React, Node.js và Thuật toán — với các ví dụ trực quan.",
+  startLearning: "Bắt đầu học",
+  paths: {
+    html: {
+      title: "HTML & CSS",
+      desc: "Học cách xây dựng và thiết kế trang web với HTML và CSS.",
+    },
+    js: {
+      title: "JavaScript",
+      desc: "Tìm hiểu ngôn ngữ cốt lõi mang lại tính tương tác cho web.",
+    },
+    react: {
+      title: "React",
+      desc: "Xây dựng giao diện người dùng động và mở rộng với React.",
+    },
+    node: {
+      title: "Node.js",
+      desc: "Khám phá cách hoạt động của backend, API và cơ sở dữ liệu với Node và Express.",
+    },
+    algo: {
+      title: "Trực quan thuật toán",
+      desc: "Quan sát các thuật toán như Sắp xếp nổi bọt, Chèn, và nhiều hơn nữa.",
+    },
+  },
+};
+
+export default homePage;
