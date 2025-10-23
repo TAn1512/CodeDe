@@ -1,5 +1,7 @@
+import Header from "@/components/Learn/HTML/Tags/Header";
 import Note from "@/components/Learn/HTML/Tags/Note";
 import Section from "@/components/Learn/HTML/Tags/Section";
+import Summary from "@/components/Learn/HTML/Tags/Summary";
 import { getTranslations } from "next-intl/server";
 
 
@@ -17,9 +19,9 @@ export default async function HeadingsPage({
     return (
         <div className="space-y-10">
             {/* --- Phần giới thiệu --- */}
-            <Section
+            <Header
                 title={t("title")}
-                desc={`
+                description={`
                     <p>${t("description")}</p>
                     <ul class="list-disc pl-5 mt-3 space-y-2">
                         <li>${t.raw("point1")}</li>
@@ -58,6 +60,7 @@ export default async function HeadingsPage({
   </body>
 </html>`}
             />
+            <Summary summaryTitle={t("summaryTitle")} summary={t.raw("summary")} />
         </div>
     );
 }

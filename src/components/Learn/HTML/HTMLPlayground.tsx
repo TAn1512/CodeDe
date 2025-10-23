@@ -17,15 +17,40 @@ export default function HTMLPlayground({
     const [copied, setCopied] = useState(false);
     const textareaRef = useRef<HTMLTextAreaElement | null>(null);
     const iframeRef = useRef<HTMLIFrameElement | null>(null);
+    const [editorHeight, setEditorHeight] = useState(150);
 
-    // 🧩 Auto resize textarea theo nội dung
+    // 🧩 Tự động resize textarea theo nội dung
     useEffect(() => {
         const textarea = textareaRef.current;
         if (textarea) {
-            textarea.style.height = "auto"; // reset để tính lại
-            textarea.style.height = `${textarea.scrollHeight}px`;
+            textarea.style.height = "auto";
+            const newHeight = textarea.scrollHeight;
+            textarea.style.height = `${newHeight}px`;
+            setEditorHeight(newHeight);
         }
     }, [code]);
+
+    // 🧱 Tự động điều chỉnh chiều cao iframe (≤ chiều cao editor)
+    const adjustIframeHeight = () => {
+        const iframe = iframeRef.current;
+        if (!iframe) return;
+
+        try {
+            const iframeDoc = iframe.contentDocument;
+            if (iframeDoc) {
+                const contentHeight = iframeDoc.documentElement.scrollHeight;
+                // Giới hạn: không vượt quá chiều cao editor
+                const finalHeight = Math.min(contentHeight + 20, editorHeight);
+                iframe.style.height = `${Math.max(finalHeight, 225)}px`; // ít nhất 225px
+            }
+        } catch {
+            // ignore cross-origin
+        }
+    };
+
+    useEffect(() => {
+        adjustIframeHeight();
+    }, [iframeSrc, editorHeight]);
 
     const handleCopy = async () => {
         await navigator.clipboard.writeText(code);
@@ -35,6 +60,7 @@ export default function HTMLPlayground({
 
     const handleRun = () => {
         setIframeSrc(code);
+        setTimeout(adjustIframeHeight, 100); // đợi render xong
     };
 
     return (
@@ -44,7 +70,7 @@ export default function HTMLPlayground({
                 {title}
             </h3>
 
-            <div className="grid md:grid-cols-2 gap-5">
+            <div className="grid md:grid-cols-2 gap-5 items-start">
                 {/* 🧠 Code Editor */}
                 <div className="flex flex-col bg-gray-800 rounded-lg overflow-hidden">
                     <div className="flex justify-between items-center px-3 py-2 bg-gray-700 text-sm">
@@ -69,7 +95,7 @@ export default function HTMLPlayground({
 
                     <textarea
                         ref={textareaRef}
-                        className="w-full mb-8 p-3 font-mono text-sm bg-gray-900 text-gray-100 outline-none resize-none"
+                        className="w-full p-3 font-mono text-sm bg-gray-900 text-gray-100 outline-none resize-none min-h-[150px]"
                         value={code}
                         onChange={(e) => setCode(e.target.value)}
                         spellCheck={false}
@@ -81,25 +107,14 @@ export default function HTMLPlayground({
                     <iframe
                         ref={iframeRef}
                         srcDoc={iframeSrc}
-                        className="w-full"
+                        className="w-full block"
                         style={{
-                            height: "auto",
-                            minHeight: "100px",
+                            height: `${Math.max(editorHeight, 150)}px`,
+                            border: "none",
+                            overflow: "hidden",
                         }}
                         title="HTML Output"
-                        onLoad={(e) => {
-                            // Tự điều chỉnh chiều cao iframe dựa vào nội dung
-                            const iframe = e.currentTarget;
-                            try {
-                                const iframeDoc = iframe.contentDocument;
-                                if (iframeDoc) {
-                                    const height = iframeDoc.documentElement.scrollHeight;
-                                    iframe.style.height = `${Math.min(height + 20, 600)}px`; // giới hạn max-height 600px
-                                }
-                            } catch {
-                                // ignore cross-origin
-                            }
-                        }}
+                        onLoad={adjustIframeHeight}
                     />
                 </div>
             </div>

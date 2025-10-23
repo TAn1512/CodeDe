@@ -9,6 +9,9 @@ import sidebar from "./html/sidebar";
 import paragraphTags from "./html/paragraphTags";
 import stylesTags from "./html/stylesTags";
 import linkTags from "./html/linkTags";
+import imageTags from "./html/imageTags";
+import listTags from "./html/listTags";
+import formTags from "./html/formTags";
 
 const enMessages = {
     html: {
@@ -18,7 +21,10 @@ const enMessages = {
         introduction,
         paragraphTags,
         stylesTags,
-        linkTags
+        linkTags,
+        imageTags,
+        listTags,
+        formTags,
     },
     global: {
         navbar,

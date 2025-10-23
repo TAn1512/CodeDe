@@ -5,29 +5,33 @@ import { getTranslations } from "next-intl/server";
 import Header from "@/components/Learn/HTML/Tags/Header";
 import Summary from "@/components/Learn/HTML/Tags/Summary";
 
-export default async function HTMLLinksPage({
-    params,
-}: {
-    params: { locale: string };
-}) {
+export default async function HTMLImagesPage({ params }: { params: { locale: string } }) {
     const { locale } = await params;
-    const t = await getTranslations({ locale: locale, namespace: "html.linkTags" });
+    const t = await getTranslations({ locale: locale, namespace: "html.imageTags" });
 
     const content = {
         title: t("title"),
         description: t.raw("description"),
         sections: [
-            { title: t("sub1"), desc: t.raw("sub1_desc") },
+            // Section 1
+            { title: t("sub1"), desc: t.raw("sub1_desc"), example: t.raw("example1") },
             { note: t.raw("note1") },
-            { title: t("sub2"), desc: t.raw("sub2_desc"), example: t.raw("example1") },
-            { title: t("sub3"), desc: t.raw("sub3_desc"), example: t.raw("example3") },
+
+            // Section 2
+            { title: t("sub2"), desc: t.raw("sub2_desc"), example: t.raw("example2") },
             { tip: t.raw("tip1") },
-            { title: t("sub4"), desc: t.raw("sub4_desc"), example: t.raw("example4") },
+
+            // Section 3
+            { title: t("sub3"), desc: t.raw("sub3_desc"), example: t.raw("example3") },
             { note: t.raw("note2") },
+
+            // Section 4
+            { title: t("sub4"), desc: t.raw("sub4_desc"), example: t.raw("example4") },
+            { tip: t.raw("tip2") },
+
+            // Section 5
             { title: t("sub5"), desc: t.raw("sub5_desc"), example: t.raw("example5") },
-            { title: t("sub6"), desc: t.raw("sub6_desc"), example: t.raw("example6") },
-            { title: t("sub7"), desc: t.raw("sub7_desc"), example: t.raw("example7") },
-            { title: t("sub8"), desc: t.raw("sub8_desc"), example: t.raw("example8") },
+            { note: t.raw("note3") },
         ],
         summaryTitle: t("summaryTitle"),
         summary: t.raw("summary"),
@@ -35,7 +39,10 @@ export default async function HTMLLinksPage({
 
     return (
         <div>
+            {/* Header */}
             <Header title={content.title} description={content.description} />
+
+            {/* Sections */}
             {content.sections.map((sec, i) => (
                 <div key={i}>
                     {sec.title && (
@@ -50,6 +57,7 @@ export default async function HTMLLinksPage({
                 </div>
             ))}
 
+            {/* Summary */}
             <Summary summaryTitle={content.summaryTitle} summary={content.summary} />
         </div>
     );

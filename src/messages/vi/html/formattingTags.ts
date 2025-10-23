@@ -41,7 +41,7 @@ const formattingTags = {
     example6: "<p>10<sup>2</sup> = 100</p>",
     note3:
         "<strong>Lưu ý:</strong> Văn bản chỉ số trên sẽ hiển thị cao hơn một chút so với dòng chữ thông thường.",
-    summaryTitle: "Tóm tắt chương",
+    summaryTitle: "Tóm tắt",
     summary:
         "<ul>\n<li>Dùng <code>&lt;b&gt;</code> hoặc <code>&lt;strong&gt;</code> cho văn bản in đậm.</li>\n<li>Dùng <code>&lt;i&gt;</code> hoặc <code>&lt;em&gt;</code> cho văn bản in nghiêng hoặc nhấn mạnh.</li>\n<li>Dùng <code>&lt;mark&gt;</code> để làm nổi bật văn bản.</li>\n<li>Dùng <code>&lt;small&gt;</code> cho văn bản nhỏ hoặc thông tin phụ.</li>\n<li>Dùng <code>&lt;del&gt;</code> và <code>&lt;ins&gt;</code> để thể hiện nội dung bị xóa hoặc được thêm mới.</li>\n<li>Dùng <code>&lt;sub&gt;</code> và <code>&lt;sup&gt;</code> cho chỉ số dưới và chỉ số trên.</li>\n</ul>"
 };

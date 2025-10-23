@@ -1,5 +1,7 @@
+import Header from "@/components/Learn/HTML/Tags/Header";
 import Note from "@/components/Learn/HTML/Tags/Note";
 import Section from "@/components/Learn/HTML/Tags/Section";
+import Summary from "@/components/Learn/HTML/Tags/Summary";
 import { getTranslations } from "next-intl/server";
 
 export default async function ParagraphsPage({
@@ -16,9 +18,9 @@ export default async function ParagraphsPage({
     return (
         <div className="space-y-10">
             {/* --- Giới thiệu --- */}
-            <Section
+            <Header
                 title={t("title")}
-                desc={t.raw("description")}
+                description={t.raw("description")}
             />
 
             {/* --- Đoạn văn cơ bản --- */}
@@ -58,6 +60,9 @@ export default async function ParagraphsPage({
                 desc={t.raw("sub5_desc")}
                 example={t.raw("example5")}
             />
+
+            {/* --- Tóm tắt chương --- */}
+            <Summary summaryTitle={t("summaryTitle")} summary={t.raw("summary")} />
         </div>
     );
 }

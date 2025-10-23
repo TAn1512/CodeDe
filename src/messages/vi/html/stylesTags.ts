@@ -23,9 +23,16 @@ const styleTags = {
     sub5_desc: "Sử dụng thuộc tính <b>text-align</b> để căn chỉnh ngang cho văn bản.",
     example5: "<h1 style='text-align: center;'>Tiêu đề căn giữa</h1>\n<p style='text-align: right;'>Đoạn văn căn phải</p>",
     note3: "<strong>Ghi chú:</strong> Các giá trị phổ biến gồm <code>left</code>, <code>right</code>, <code>center</code> và <code>justify</code>.",
-    summaryTitle: "📘 Tóm tắt",
-    summary:
-        "<li>Sử dụng thuộc tính style để định dạng các phần tử HTML</li><li>Dùng background-color để đổi màu nền</li><li>Dùng color để đổi màu chữ</li><li>Dùng font-family để chọn phông chữ</li><li>Dùng font-size để chỉnh kích thước chữ</li><li>Dùng text-align để căn chỉnh văn bản</li>"
+
+    summaryTitle: "Tóm tắt",
+    summary: `<ul>
+<li>Sử dụng thuộc tính <code>style</code> để áp dụng các kiểu CSS nội tuyến cho phần tử HTML.</li>
+<li>Sử dụng <code>background-color</code> để đặt màu nền.</li>
+<li>Sử dụng <code>color</code> để xác định màu chữ.</li>
+<li>Sử dụng <code>font-family</code> để thay đổi phông chữ.</li>
+<li>Sử dụng <code>font-size</code> để điều chỉnh kích thước chữ.</li>
+<li>Sử dụng <code>text-align</code> để căn chỉnh văn bản (trái, giữa hoặc phải).</li>
+</ul>`,
 };
 
 export default styleTags;

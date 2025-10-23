@@ -2,6 +2,8 @@ import Note from "@/components/Learn/HTML/Tags/Note";
 import Tip from "@/components/Learn/HTML/Tags/Tip";
 import Section from "@/components/Learn/HTML/Tags/Section";
 import { getTranslations } from "next-intl/server";
+import Header from "@/components/Learn/HTML/Tags/Header";
+import Summary from "@/components/Learn/HTML/Tags/Summary";
 
 export default async function StylesPage({
     params,
@@ -17,7 +19,7 @@ export default async function StylesPage({
     return (
         <div className="space-y-10">
             {/* --- Giới thiệu --- */}
-            <Section title={t("title")} desc={t.raw("description")} />
+            <Header title={t("title")} description={t.raw("description")} />
 
             {/* --- 1. Background Color --- */}
             <Section
@@ -60,9 +62,9 @@ export default async function StylesPage({
             <Note content={t.raw("note3")} />
 
             {/* --- Summary --- */}
-            <Section
-                title={t("summaryTitle")}
-                desc={`<ul class="list-disc pl-5 space-y-1">${t.raw("summary")}</ul>`}
+            <Summary
+                summaryTitle={t("summaryTitle")}
+                summary={t.raw("summary")}
             />
         </div>
     );

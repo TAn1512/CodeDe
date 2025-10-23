@@ -23,7 +23,16 @@ const paragraphTags = {
     example5:
         "<pre>\nMy Bonnie lies over the ocean.\n\nMy Bonnie lies over the sea.\n\nMy Bonnie lies over the ocean.\n\nOh, bring back my Bonnie to me.\n</pre>",
     note1:
-        "<strong>Note:</strong> Browsers collapse whitespace (spaces, tabs, newlines) in normal flow. Use <code>&lt;pre&gt;</code> to preserve formatting, or <code>&lt;br&gt;</code> for single line breaks."
+        "<strong>Note:</strong> Browsers collapse whitespace (spaces, tabs, newlines) in normal flow. Use <code>&lt;pre&gt;</code> to preserve formatting, or <code>&lt;br&gt;</code> for single line breaks.",
+    summaryTitle: "Chapter Summary",
+    summary: `<ul>
+<li>Use <code>&lt;p&gt;</code> to define paragraphs — browsers add spacing automatically.</li>
+<li>Extra spaces or line breaks in HTML source are ignored by browsers.</li>
+<li>Use <code>&lt;hr&gt;</code> to insert a horizontal rule (thematic break).</li>
+<li>Use <code>&lt;br&gt;</code> to create single line breaks within text.</li>
+<li>Use <code>&lt;pre&gt;</code> to display preformatted text with preserved spaces and line breaks.</li>
+<li>Remember: normal paragraphs collapse whitespace; <code>&lt;pre&gt;</code> does not.</li>
+</ul>`,
 };
 
 export default paragraphTags;
