@@ -24,7 +24,17 @@ const paragraphTags = {
         "Thẻ &lt;pre&gt; giữ nguyên khoảng trắng và xuống dòng, hiển thị văn bản đúng như trong mã nguồn.",
     example5:
         "<pre>\nBonnie của tôi ở ngoài đại dương.\n\nBonnie của tôi ở ngoài khơi xa.\n\nBonnie của tôi ở ngoài đại dương.\n\nÔi, hãy mang Bonnie của tôi trở lại bên tôi.\n</pre>",
-    note1: "<strong>Lưu ý:</strong> Trình duyệt sẽ gộp các khoảng trắng (dấu cách, tab, xuống dòng) trong luồng văn bản bình thường. Dùng <code>&lt;pre&gt;</code> để giữ nguyên định dạng, hoặc <code>&lt;br&gt;</code> để ngắt dòng đơn."
+    note1: "<strong>Lưu ý:</strong> Trình duyệt sẽ gộp các khoảng trắng (dấu cách, tab, xuống dòng) trong luồng văn bản bình thường. Dùng <code>&lt;pre&gt;</code> để giữ nguyên định dạng, hoặc <code>&lt;br&gt;</code> để ngắt dòng đơn.",
+
+    summaryTitle: "Tóm tắt",
+    summary: `<ul>
+<li>Sử dụng <code>&lt;p&gt;</code> để định nghĩa đoạn văn — trình duyệt sẽ tự động thêm khoảng cách.</li>
+<li>Khoảng trắng hoặc xuống dòng thừa trong mã HTML sẽ bị trình duyệt bỏ qua.</li>
+<li>Sử dụng <code>&lt;hr&gt;</code> để chèn đường kẻ ngang (phân tách nội dung).</li>
+<li>Sử dụng <code>&lt;br&gt;</code> để tạo ngắt dòng đơn trong văn bản.</li>
+<li>Sử dụng <code>&lt;pre&gt;</code> để hiển thị văn bản định dạng sẵn với khoảng trắng và xuống dòng được giữ nguyên.</li>
+<li>Nhớ rằng: đoạn văn bình thường sẽ gộp khoảng trắng; <code>&lt;pre&gt;</code> thì không.</li>
+</ul>`,
 };
 
 export default paragraphTags;

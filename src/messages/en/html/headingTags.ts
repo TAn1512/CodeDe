@@ -2,8 +2,10 @@ const headingTags = {
     title: "HTML Headings",
     description:
         "HTML headings are defined with &lt;h1&gt; to &lt;h6&gt; tags. They represent different levels of importance.",
-    point1: "&lt;h1&gt; defines the most important heading, while &lt;h6&gt; defines the least important.",
-    point2: "Browsers automatically display headings in larger, bolder font sizes.",
+    point1:
+        "&lt;h1&gt; defines the most important heading, while &lt;h6&gt; defines the least important.",
+    point2:
+        "Browsers automatically display headings in larger, bolder font sizes.",
     point3: "Each page should have only one &lt;h1&gt; tag.",
     exampleTitle: "Basic Example",
     note1:
@@ -15,7 +17,17 @@ const headingTags = {
     biggerTitle: "Bigger Headings",
     biggerText:
         "Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property.",
-    biggerExample: "Example: Custom Font Size"
+    biggerExample: "Example: Custom Font Size",
+    summaryTitle: "Chapter Summary",
+    summary: `<ul>
+<li>HTML provides six levels of headings: <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>.</li>
+<li><code>&lt;h1&gt;</code> is the most important heading; <code>&lt;h6&gt;</code> is the least important.</li>
+<li>Browsers automatically add spacing and make headings bold.</li>
+<li>Use only one <code>&lt;h1&gt;</code> per page to represent the main title.</li>
+<li>Headings help search engines understand page structure and improve accessibility.</li>
+<li>You can adjust heading sizes with CSS using the <code>font-size</code> property.</li>
+<li>Avoid using heading tags just to make text bold or large — use them semantically.</li>
+</ul>`,
 };
 
 export default headingTags;

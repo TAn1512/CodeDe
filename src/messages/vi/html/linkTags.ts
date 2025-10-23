@@ -47,7 +47,7 @@ const linkTags = {
         "Thuộc tính <code>title</code> hiển thị thêm thông tin khi người dùng di chuột qua liên kết — thường được hiển thị dưới dạng chú giải công cụ (tooltip):",
     example8:
         '<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" title="Tìm hiểu thêm về liên kết HTML">Hướng dẫn liên kết HTML</a>',
-    summaryTitle: "Tóm tắt chương",
+    summaryTitle: "Tóm tắt",
     summary:
         "<ul>\n<li>Sử dụng phần tử <code>&lt;a&gt;</code> để tạo siêu liên kết.</li>\n<li>Dùng thuộc tính <code>href</code> để xác định địa chỉ đích.</li>\n<li>Dùng <code>target=\"_blank\"</code> để mở liên kết trong tab mới (kèm <code>rel=\"noopener noreferrer\"</code>).</li>\n<li>Dùng <code>mailto:</code> để tạo liên kết email.</li>\n<li>Liên kết có thể là văn bản, hình ảnh hoặc nút được định dạng bằng CSS.</li>\n</ul>"
 };

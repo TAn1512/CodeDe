@@ -2,6 +2,8 @@ import Section from "@/components/Learn/HTML/Tags/Section";
 import Note from "@/components/Learn/HTML/Tags/Note";
 import Tip from "@/components/Learn/HTML/Tags/Tip";
 import { getTranslations } from "next-intl/server";
+import Header from "@/components/Learn/HTML/Tags/Header";
+import Summary from "@/components/Learn/HTML/Tags/Summary";
 
 export default async function HTMLFormattingPage({ params }: { params: { locale: string } }) {
     const { locale } = await params;
@@ -42,12 +44,8 @@ export default async function HTMLFormattingPage({ params }: { params: { locale:
 
     return (
         <div>
-            {/* Title + Description */}
-            <h1 className="text-3xl font-bold mb-4">{content.title}</h1>
-            <p
-                className="text-gray-300 mb-6"
-                dangerouslySetInnerHTML={{ __html: content.description }}
-            />
+            {/* Header */}
+            <Header title={content.title} description={content.description} />
 
             {/* Dynamic Sections */}
             {content.sections.map((sec, i) => (
@@ -65,13 +63,7 @@ export default async function HTMLFormattingPage({ params }: { params: { locale:
             ))}
 
             {/* Summary */}
-            <h2 className="text-2xl font-semibold mt-10 mb-3">
-                {content.summaryTitle}
-            </h2>
-            <ul
-                className="list-disc list-inside text-gray-300"
-                dangerouslySetInnerHTML={{ __html: content.summary }}
-            />
+            <Summary summaryTitle={content.summaryTitle} summary={content.summary} />
         </div>
     );
 }

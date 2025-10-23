@@ -1,3 +1,4 @@
+import Header from "@/components/Learn/HTML/Tags/Header";
 import Section from "@/components/Learn/HTML/Tags/Section";
 import { getTranslations } from "next-intl/server";
 
@@ -95,11 +96,12 @@ export default async function HTMLIntroductionPage({
 
     return (
         <div>
-            <h1 className="text-3xl font-bold mb-4">{content.title}</h1>
-            <p
+            <Header title={content.title} description={content.description} />
+            {/* <h1 className="text-3xl font-bold mb-4">{content.title}</h1> */}
+            {/* <p
                 className="text-gray-300 mb-6"
                 dangerouslySetInnerHTML={{ __html: content.description }}
-            />
+            /> */}
 
             {content.sections.map((sec, i) => (
                 <div key={i}>

@@ -33,9 +33,15 @@ const stylesTags = {
         "<h1 style='text-align: center;'>Centered heading</h1>\n<p style='text-align: right;'>Right-aligned paragraph</p>",
     note3:
         "<strong>Note:</strong> Common values include <code>left</code>, <code>right</code>, <code>center</code>, and <code>justify</code>.",
-    summaryTitle: "📘 Summary",
-    summary:
-        "<li>Use the style attribute for styling HTML elements</li><li>Use background-color for background color</li><li>Use color for text colors</li><li>Use font-family for text fonts</li><li>Use font-size for text sizes</li><li>Use text-align for text alignment</li>"
+    summaryTitle: "Chapter Summary",
+    summary: `<ul>
+<li>Use the <code>style</code> attribute to apply inline CSS styles to HTML elements.</li>
+<li>Use <code>background-color</code> to set the background color.</li>
+<li>Use <code>color</code> to define the text color.</li>
+<li>Use <code>font-family</code> to change the text font.</li>
+<li>Use <code>font-size</code> to adjust text size.</li>
+<li>Use <code>text-align</code> to align text (left, center, or right).</li>
+</ul>`,
 };
 
 export default stylesTags;

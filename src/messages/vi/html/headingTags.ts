@@ -15,6 +15,16 @@ const headingTags = {
     biggerText:
         "Mỗi thẻ tiêu đề HTML có kích thước mặc định. Tuy nhiên, bạn có thể chỉ định kích thước cho bất kỳ tiêu đề nào bằng thuộc tính <code>style</code>, sử dụng thuộc tính CSS <code>font-size</code>.",
     biggerExample: "Ví dụ về thay đổi kích thước tiêu đề",
+    summaryTitle: "Tóm tắt",
+    summary: `<ul>
+<li>HTML cung cấp sáu cấp độ tiêu đề: <code>&lt;h1&gt;</code> đến <code>&lt;h6&gt;</code>.</li>
+<li><code>&lt;h1&gt;</code> là tiêu đề quan trọng nhất; <code>&lt;h6&gt;</code> là ít quan trọng nhất.</li> 
+<li>Trình duyệt tự động thêm khoảng cách và làm tiêu đề in đậm.</li>
+<li>Chỉ sử dụng một <code>&lt;h1&gt;</code> cho mỗi trang để đại diện cho tiêu đề chính.</li>
+<li>Các tiêu đề giúp công cụ tìm kiếm hiểu cấu trúc trang và cải thiện khả năng truy cập.</li>
+<li>Bạn có thể điều chỉnh kích thước tiêu đề bằng CSS sử dụng thuộc tính <code>font-size</code>.</li>
+<li>Tránh sử dụng thẻ tiêu đề chỉ để làm chữ in đậm hoặc to — hãy sử dụng chúng một cách có ý nghĩa.</li>
+</ul>`,
 };
 
 export default headingTags;

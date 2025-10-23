@@ -1,4 +1,5 @@
 import SafeHTML from "@/components/Global/SafeHTML";
+import HTMLPlayground from "../HTMLPlayground";
 import HTMLPlaygroundClient from "./HTMLPlaygroundClient";
 
 export default function Section({
