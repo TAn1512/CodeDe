@@ -6,6 +6,8 @@ import { useState } from "react";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
+
 
 interface LessonItem {
     id: string;
@@ -26,6 +28,9 @@ export default function Sidebar({
     const [open, setOpen] = useState(false);
     const [expanded, setExpanded] = useState<string | null>(null);
     const t = useTranslations(namespace);
+
+    const locale = useLocale();
+
 
     const toggleExpand = (id: string) =>
         setExpanded((prev) => (prev === id ? null : id));
@@ -60,7 +65,7 @@ export default function Sidebar({
                                 <span className="font-medium">{t(item.key)}</span>
                             ) : (
                                 <Link
-                                    href={fullPath}
+                                    href={`/${locale}${fullPath}`}
                                     onClick={() => setOpen(false)}
                                     className="block w-full"
                                 >
@@ -88,7 +93,7 @@ export default function Sidebar({
                                     return (
                                         <li key={child.id}>
                                             <Link
-                                                href={childPath}
+                                                href={`/${locale}${childPath}`}
                                                 onClick={() => setOpen(false)}
                                                 className={clsx(
                                                     "block px-2 py-1 rounded-md text-sm transition",
