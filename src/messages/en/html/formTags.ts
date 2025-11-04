@@ -111,13 +111,15 @@ const formTags = {
         sub3: "Special Input Types",
         sub3_desc:
             "HTML5 introduced new input types for better user experience:",
-        example3: `<ul>
-<li><code>color</code> – color picker</li>
-<li><code>range</code> – slider control</li>
-<li><code>tel</code> – telephone number input</li>
-<li><code>url</code> – website input</li>
-<li><code>search</code> – search field</li>
-</ul>`,
+        example3: `<form style="display: flex; flex-direction: column; gap: 8px; max-width: 250px;"></form>
+  <label>Choose color: <input type="color" value="#ff6600"></label>
+  <label>Select range: <input type="range" min="0" max="100" value="60"></label>
+    <label>Phone number: <input type="tel" placeholder="0123-456-789"></label>
+    <label>Website URL: <input type="url" placeholder="https://example.com"></label>
+    <label>Search: <input type="search" placeholder="Keywords..."></label>
+</form>`,
+        note3:
+            "<strong>Note:</strong> These input types help browsers provide appropriate input controls (e.g., numeric keypad for <code>tel</code> or color picker for <code>color</code>).",
 
         summaryTitle: "Summary",
         summary: `<ul>
