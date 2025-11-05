@@ -1,4 +1,7 @@
 const linkTags = {
+    metaTitle: "HTML Links (Hyperlinks) – <a> Tag Complete Guide",
+    metaDescription:
+        "Understand how to create links in HTML using the <a> tag. Learn about href, target, and how to link to pages, files, and external sites.",
     title: "HTML Links (Hyperlinks)",
     description:
         "Links are one of the core building blocks of the web. They let users navigate between pages, websites, or even trigger actions like sending an email.\n\nWhen you hover over a link, your cursor changes into a hand icon — indicating that it’s clickable.\n\n<b>Note:</b> A link can be more than just text. It can be an image, a button, or even a block element!",

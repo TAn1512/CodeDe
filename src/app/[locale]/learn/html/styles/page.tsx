@@ -4,6 +4,16 @@ import Section from "@/components/Learn/HTML/Tags/Section";
 import { getTranslations } from "next-intl/server";
 import Header from "@/components/Learn/HTML/Tags/Header";
 import Summary from "@/components/Learn/HTML/Tags/Summary";
+import { getPageMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    return getPageMetadata({
+        locale,
+        namespace: "html.stylesTags",
+        slug: "learn/html/styles",
+    });
+}
 
 export default async function StylesPage({
     params,

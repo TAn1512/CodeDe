@@ -23,7 +23,7 @@ export default function LanguageSwitcher() {
 
         // Gộp lại URL
         const newPath = segments.join("/") || "/";
-        router.push(newPath);
+        router.push(newPath, { scroll: false });
     };
 
     return (

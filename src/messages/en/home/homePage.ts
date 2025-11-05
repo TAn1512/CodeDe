@@ -1,29 +1,46 @@
 const homePage = {
-  title: "Welcome to CodeDe",
-  description:
-    "Learn programming from the basics — HTML, CSS, JavaScript, React, Node.js, and Algorithms — with interactive examples.",
-  startLearning: "Start Learning",
+  hero: {
+    title: "CodeDe — Understand deeply, code easily.",
+    description:
+      "Learn with CodeDe and master web development, diagrams, and algorithms through interactive, visual lessons.",
+    startLearning: "Start Learning",
+    slogan: "Learn smart – Understand deeply.",
+  },
   paths: {
-    html: {
-      title: "HTML & CSS",
-      desc: "Learn to build and design web pages using HTML and CSS.",
-    },
-    js: {
-      title: "JavaScript",
-      desc: "Understand the core language that brings interactivity to the web.",
-    },
-    react: {
-      title: "React",
-      desc: "Build dynamic and scalable user interfaces with React.",
-    },
-    node: {
-      title: "Node.js",
-      desc: "Discover how backend APIs and databases work with Node and Express.",
+    html: { title: "HTML", desc: "Learn the structure of web pages with HTML fundamentals." },
+    css: { title: "CSS", desc: "Style and layout web pages beautifully using CSS." },
+    js: { title: "JavaScript", desc: "Add interactivity to the web with the most popular language." },
+    react: { title: "React", desc: "Build scalable user interfaces with modern React." },
+    node: { title: "Node.js", desc: "Learn backend logic and API building using Node & Express." },
+  },
+  sections: {
+    code: { title: "Learn Web Development" },
+    visual: {
+      title: "Visual Learning Tools",
+      diagram: { title: "Diagrams", desc: "Understand logic through visual diagrams." },
+      flowchart: { title: "Flowcharts", desc: "Simulate processes and algorithms easily." },
+      structure: { title: "Data Structures", desc: "Visualize stacks, queues, and lists in motion." },
     },
     algo: {
-      title: "Algorithm Visualization",
-      desc: "Visualize algorithms like Bubble Sort, Insertion Sort, and more.",
+      title: "Algorithms & Data Structures",
+      sorting: { title: "Sorting Algorithms", desc: "Understand how sorting algorithms work step-by-step." },
+      tree: { title: "Binary Trees", desc: "Visualize insertion, traversal, and searching in trees." },
+      graph: { title: "Graphs", desc: "Explore BFS, DFS, and Dijkstra through visual examples." },
     },
+  },
+  why: {
+    title: "Why Choose CodeDe?",
+    interactive: { title: "Interactive Learning", desc: "Practice and learn directly in your browser." },
+    understand: { title: "Understand Deeply", desc: "Don’t just copy code — learn why it works." },
+    faster: { title: "Faster Progress", desc: "Smart hints and examples make learning faster." },
+    visual: {
+      title: "Visual Learning",
+      desc: "Grasp complex concepts through diagrams, simulations, and vivid visuals."
+    },
+  },
+  cta: {
+    title: "Ready to start your coding journey?",
+    desc: "Join CodeDe and learn coding the fun, interactive way.",
   },
 };
 

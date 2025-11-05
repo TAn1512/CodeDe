@@ -1,4 +1,6 @@
 const formattingTags = {
+    metaTitle: "HTML Formatting Tags",
+    metaDescription: "Learn how to use HTML tags to format text like bold, italic, underline and more.",
     title: "HTML Text Formatting",
     description: "HTML provides several elements for defining text with special meaning and style emphasis.",
     sub1: "Formatting Elements Overview",

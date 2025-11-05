@@ -2,7 +2,17 @@ import Header from "@/components/Learn/HTML/Tags/Header";
 import Note from "@/components/Learn/HTML/Tags/Note";
 import Section from "@/components/Learn/HTML/Tags/Section";
 import Summary from "@/components/Learn/HTML/Tags/Summary";
+import { getPageMetadata } from "@/lib/metadata";
 import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    return getPageMetadata({
+        locale,
+        namespace: "html.paragraphTags",
+        slug: "learn/html/paragraphs",
+    });
+}
 
 export default async function ParagraphsPage({
     params,

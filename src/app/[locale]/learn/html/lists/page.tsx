@@ -4,6 +4,16 @@ import Tip from "@/components/Learn/HTML/Tags/Tip";
 import { getTranslations } from "next-intl/server";
 import Header from "@/components/Learn/HTML/Tags/Header";
 import Summary from "@/components/Learn/HTML/Tags/Summary";
+import { getPageMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    return getPageMetadata({
+        locale,
+        namespace: "html.listTags",
+        slug: "learn/html/lists",
+    });
+}
 
 export default async function HTMLListsPage({ params }: { params: { locale: string } }) {
     const { locale } = await params;

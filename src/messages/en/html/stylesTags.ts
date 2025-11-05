@@ -1,4 +1,7 @@
 const stylesTags = {
+    metaTitle: "HTML Style and Formatting – Inline and Internal CSS",
+    metaDescription:
+        "Learn how to style HTML elements using inline styles and the <style> tag. Understand best practices for separating content and presentation.",
     title: "HTML Styles",
     description:
         "The <b>style</b> attribute allows you to apply CSS directly to HTML elements. You can quickly change colors, fonts, and alignment for demonstration or small customizations. However, for larger projects, use CSS in separate files.",
