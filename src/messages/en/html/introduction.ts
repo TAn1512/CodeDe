@@ -1,4 +1,7 @@
 const introduction = {
+    metaTitle: "Introduction to HTML – The Building Blocks of the Web",
+    metaDescription:
+        "Learn the basics of HTML — the foundation of every webpage. Understand elements, tags, and structure to start building your first website.",
     title: "Introduction to HTML",
     description: "HTML (HyperText Markup Language) is the markup language used to structure content on web pages.",
     sections: [

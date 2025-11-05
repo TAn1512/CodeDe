@@ -1,6 +1,16 @@
 import Header from "@/components/Learn/HTML/Tags/Header";
 import Section from "@/components/Learn/HTML/Tags/Section";
+import { getPageMetadata } from "@/lib/metadata";
 import { getTranslations } from "next-intl/server";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    return getPageMetadata({
+        locale,
+        namespace: "html.introduction",
+        slug: "learn/html/introduction",
+    });
+}
 
 export default async function HTMLIntroductionPage({
     params,

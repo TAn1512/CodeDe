@@ -1,4 +1,7 @@
 const paragraphTags = {
+    metaTitle: "HTML Paragraphs – How to Use the <p> Tag Correctly",
+    metaDescription:
+        "Learn how to create and style paragraphs using the <p> tag in HTML. Understand line breaks, spacing, and text formatting tips.",
     title: "HTML Paragraphs",
     description:
         "The &lt;p&gt; tag defines a paragraph. Browsers automatically add white space before and after paragraphs.",

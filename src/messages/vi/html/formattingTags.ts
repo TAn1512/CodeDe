@@ -1,4 +1,7 @@
 const formattingTags = {
+    metaTitle: "Thẻ định dạng HTML",
+    metaDescription:
+        "Tìm hiểu cách sử dụng các thẻ HTML để định dạng văn bản như in đậm, in nghiêng, gạch chân và nhiều hơn nữa.",
     title: "Định dạng văn bản trong HTML",
     description:
         "HTML cung cấp nhiều phần tử để xác định văn bản có ý nghĩa đặc biệt hoặc được nhấn mạnh về mặt kiểu dáng.",

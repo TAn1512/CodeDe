@@ -3,6 +3,16 @@ import Note from "@/components/Learn/HTML/Tags/Note";
 import { getTranslations } from "next-intl/server";
 import Header from "@/components/Learn/HTML/Tags/Header";
 import Summary from "@/components/Learn/HTML/Tags/Summary";
+import { getPageMetadata } from "@/lib/metadata";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    return getPageMetadata({
+        locale,
+        namespace: "html.formTags.formAttributes",
+        slug: "learn/html/forms/formAttributes",
+    });
+}
 
 export default async function HTMLFormAttributesPage({ params }: { params: { locale: string } }) {
     const { locale } = await params;

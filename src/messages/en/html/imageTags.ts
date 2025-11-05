@@ -1,4 +1,7 @@
 const imageTags = {
+    metaTitle: "HTML Images – The <img> Tag Explained",
+    metaDescription:
+        "Learn how to display images in HTML using the <img> tag. Understand src, alt, width, and height attributes for better accessibility and performance.",
     title: "HTML Images",
     description: "The <code>&lt;img&gt;</code> tag is used to embed images in a webpage.",
 

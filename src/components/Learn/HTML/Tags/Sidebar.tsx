@@ -46,7 +46,7 @@ export default function Sidebar({
                     : `${basePath}/${item.id}`;
 
                 // 🔹 Active check
-                const isActive = pathname === fullPath;
+                const isActive = pathname === `/${locale}${fullPath}` || pathname === fullPath;
 
                 return (
                     <li key={item.id}>
@@ -88,7 +88,7 @@ export default function Sidebar({
                             <ul className="ml-4 mt-1 space-y-1 border-l border-gray-700 pl-3">
                                 {item.children!.map((child) => {
                                     const childPath = `${basePath}/${item.id}/${child.id}`;
-                                    const isChildActive = pathname === childPath;
+                                    const isChildActive = pathname === `/${locale}${childPath}` || pathname === childPath;
 
                                     return (
                                         <li key={child.id}>

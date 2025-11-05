@@ -1,6 +1,9 @@
 const formTags = {
     // --- PAGE 1: FORM INTRODUCTION ---
     formsIntro: {
+        metaTitle: "HTML Forms – Learn Basic Structure & Elements",
+        metaDescription:
+            "Understand the structure of HTML forms, including the <form> tag, inputs, and labels. Learn how to collect user input and handle form submissions effectively.",
         title: "HTML Forms",
         description:
             "HTML forms are used to collect user input. They are essential for interactive websites where users can submit data such as text, passwords, and files.",
@@ -38,6 +41,9 @@ const formTags = {
 
     // --- PAGE 2: FORM ATTRIBUTES ---
     formAttributes: {
+        metaTitle: "HTML Form Attributes – action, method, and target Explained",
+        metaDescription:
+            "Learn about key HTML form attributes like action, method, and target. Understand how they affect form submission, data handling, and response behavior.",
         title: "HTML Form Attributes",
         description:
             "Form attributes define the behavior and submission details of an HTML form.",
@@ -79,6 +85,9 @@ const formTags = {
 
     // --- PAGE 3: INPUT TYPES ---
     inputTypes: {
+        metaTitle: "HTML Input Types – Complete Guide with Examples",
+        metaDescription:
+            "Discover different HTML input types like text, password, email, number, and more. Learn how to create user-friendly and accessible forms with HTML5 input fields.",
         title: "HTML Input Types",
         description:
             "The <code>&lt;input&gt;</code> element supports many types for different kinds of user data.",
