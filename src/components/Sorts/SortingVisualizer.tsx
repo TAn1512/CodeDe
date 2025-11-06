@@ -108,8 +108,8 @@ export default function SortingVisualizer({
 
     return (
         <main className="p-6 text-center">
-            <h1 className="text-2xl font-bold mb-4">{title}</h1>
-            <p className="mb-4 text-gray-600">{description}</p>
+            {/* <h1 className="text-2xl font-bold mb-4">{title}</h1>
+            <p className="mb-4 text-gray-600">{description}</p> */}
 
             <input
                 type="text"

@@ -1,8 +1,10 @@
 "use client";
-import { useSort } from "@/context/SortContext";
+
+import { useRouter, usePathname } from "next/navigation";
 
 export default function SortNavbar() {
-    const { algorithm, setAlgorithm } = useSort();
+    const router = useRouter();
+    const pathname = usePathname();
 
     const algorithms = [
         { key: "bubble", label: "Bubble Sort" },
@@ -11,18 +13,26 @@ export default function SortNavbar() {
     ];
 
     return (
-        <nav className="flex gap-4 bg-gray-100 p-3 shadow-md">
-            {algorithms.map((algo) => (
-                <button
-                    key={algo.key}
-                    onClick={() => setAlgorithm(algo.key as any)}
-                    className={`px-3 py-1 rounded 
-            ${algorithm === algo.key ? "bg-blue-600 text-white" : "bg-white border"}
-          `}
-                >
-                    {algo.label}
-                </button>
-            ))}
+        <nav
+            className="fixed top-[64px] left-0 w-full z-40 flex justify-start gap-4 
+                       bg-gray-100/95 backdrop-blur-sm border-b border-gray-300 
+                       p-3 shadow-sm"
+        >
+            {algorithms.map((algo) => {
+                const active = pathname.endsWith(algo.key);
+                return (
+                    <button
+                        key={algo.key}
+                        onClick={() => router.push(`/sorts/${algo.key}`)}
+                        className={`px-4 py-2 rounded-md text-sm font-medium transition-all duration-200 ${active
+                            ? "bg-blue-600 text-white shadow"
+                            : "bg-white text-gray-700 border hover:bg-gray-100"
+                            }`}
+                    >
+                        {algo.label}
+                    </button>
+                );
+            })}
         </nav>
     );
 }

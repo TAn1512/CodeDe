@@ -42,7 +42,10 @@ export default function Navbar() {
                     <Link href="/" className="hover:text-yellow-300 transition">
                         {t("home")}
                     </Link>
-                    <Link href="/sort" className="hover:text-yellow-300 transition">
+                    <Link href="/learn/html" className="hover:text-yellow-300 transition">
+                        {t("language")}
+                    </Link>
+                    <Link href="/sorts" className="hover:text-yellow-300 transition">
                         {t("sorting")}
                     </Link>
                 </div>
@@ -72,7 +75,14 @@ export default function Navbar() {
                         {t("home")}
                     </Link>
                     <Link
-                        href="/sort"
+                        href="/learn/html"
+                        className="block hover:text-yellow-300 transition"
+                        onClick={() => setMenuOpen(false)}
+                    >
+                        {t("language")}
+                    </Link>
+                    <Link
+                        href="/sorts"
                         className="block hover:text-yellow-300 transition"
                         onClick={() => setMenuOpen(false)}
                     >
