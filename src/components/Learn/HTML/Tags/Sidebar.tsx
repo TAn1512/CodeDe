@@ -119,6 +119,7 @@ export default function Sidebar({
         <>
             {/* 📱 Mobile button */}
             <button
+                aria-label="Open menu"
                 onClick={() => setOpen(true)}
                 className="lg:hidden flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-md m-3 shadow-md"
             >
@@ -151,7 +152,7 @@ export default function Sidebar({
                 >
                     <div className="flex items-center justify-between mb-4">
                         <h2 className="text-lg font-semibold">{t("title")}</h2>
-                        <button onClick={() => setOpen(false)}>
+                        <button aria-label="Close menu" onClick={() => setOpen(false)}>
                             <X size={24} />
                         </button>
                     </div>

@@ -12,6 +12,9 @@ import linkTags from "./html/linkTags";
 import imageTags from "./html/imageTags";
 import listTags from "./html/listTags";
 import formTags from "./html/formTags";
+import { bubbleExplanation } from "./algorithms/bubbleExplanation";
+import { insertionExplanation } from "./algorithms/insertionExplanation";
+import { selectionExplanation } from "./algorithms/selectionExplanation";
 
 const enMessages = {
     html: {
@@ -34,7 +37,10 @@ const enMessages = {
         homePage
     },
     algorithms: {
-        algorithmsPage
+        algorithmsPage,
+        bubbleExplanation,
+        insertionExplanation,
+        selectionExplanation
     }
 };
 

@@ -85,7 +85,7 @@ export default function HTMLPlayground({
                             </button>
                             <button
                                 onClick={handleRun}
-                                className="flex items-center gap-1 px-2 py-1 rounded-md bg-green-600 hover:bg-green-700 transition"
+                                className="flex items-center gap-1 px-2 py-1 rounded-md bg-green-700 hover:bg-green-800 transition"
                             >
                                 <Play className="w-4 h-4" />
                                 Run
@@ -93,7 +93,11 @@ export default function HTMLPlayground({
                         </div>
                     </div>
 
+                    <label htmlFor="html-editor" className="sr-only">
+                        HTML code editor
+                    </label>
                     <textarea
+                        aria-label="HTML code editor"
                         ref={textareaRef}
                         className="w-full p-3 font-mono text-sm bg-gray-900 text-gray-100 outline-none resize-none min-h-[150px]"
                         value={code}

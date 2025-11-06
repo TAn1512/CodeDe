@@ -7,7 +7,6 @@ export const metadata: Metadata = {
         follow: true, // vẫn cho theo link đến các trang con
     },
 };
-
-export default function HTMLMainPage() {
-    redirect("/learn/html/introduction");
+export default function SortsIndexPage() {
+    redirect("/sorts/bubble");
 }
